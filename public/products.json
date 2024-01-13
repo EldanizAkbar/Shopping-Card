@@ -1,0 +1,154 @@
+[
+    {
+        "image": "https://neal.fun/spend/images/big-mac.jpg",
+        "title": "Big Mac",
+        "price": 2,
+        "id": 1,
+        "color": "Red",
+        "sku": "BM001"
+    },
+    {
+        "image": "https://neal.fun/spend/images/flip-flops.jpg",
+        "title": "Flip Flops",
+        "price": 4,
+        "id": 2,
+        "color": "Blue",
+        "sku": "FF002"
+    },
+    {
+        "image": "https://neal.fun/spend/images/book.jpg",
+        "title": "Book",
+        "price": 15,
+        "id": 3,
+        "color": "Green",
+        "sku": "BK003"
+    },
+    {
+        "image": "https://www.blockfort.com/wp-content/uploads/9214/6986/2743/MortalKombat.jpg",
+        "title": "Video Game",
+        "price": 49.99,
+        "id": 4,
+        "color": "Black",
+        "sku": "VG004"
+    },
+    {
+        "image": "https://thumbs.dreamstime.com/b/charity-donation-concept-women-s-hand-giving-receiving-gesture-charity-donation-concept-women-s-hand-giving-186159687.jpg",
+        "title": "Charity",
+        "price": 100,
+        "id": 5,
+        "color": "Pink",
+        "sku": "CH005"
+    },
+    {
+        "image": "https://neal.fun/spend/images/airpods.jpg",
+        "title": "Airpods",
+        "price": 119.99,
+        "id": 6,
+        "color": "White",
+        "sku": "AP006"
+    },
+    {
+        "image": "https://sutore.com/wp-content/uploads/2021/03/1-177.jpg",
+        "title": "Air Jordans",
+        "price": 170,
+        "id": 7,
+        "color": "Gray",
+        "sku": "AJ007"
+    },
+    {
+        "image": "https://img.gkbcdn.com/s3/p/2018-12-10/xiaomi-acton-b1-double-rocker-skateboard-black-1571989891056.jpg",
+        "title": "Skateboard",
+        "price": 120,
+        "id": 8,
+        "color": "Yellow",
+        "sku": "SB008"
+    },
+    {
+        "image": "https://neal.fun/spend/images/smartphone.jpg",
+        "title": "Smartphone",
+        "price": 339,
+        "id": 9,
+        "color": "Gold",
+        "sku": "SP009"
+    },
+    {
+        "image": "https://neal.fun/spend/images/gaming-console.jpg",
+        "title": "Gaming Console",
+        "price": 399,
+        "id": 10,
+        "color": "Silver",
+        "sku": "GC010"
+    },
+    {
+        "image": "https://neal.fun/spend/images/bike.jpg",
+        "title": "Bike",
+        "price": 549,
+        "id": 11,
+        "color": "Brown",
+        "sku": "BK011"
+    },
+    {
+        "image": "https://neal.fun/spend/images/drone.jpg",
+        "title": "Drone",
+        "price": 789,
+        "id": 12,
+        "color": "Purple",
+        "sku": "DR012"
+    },
+    {
+        "image": "https://neal.fun/spend/images/designer-handbag.jpg",
+        "title": "Designer Bag",
+        "price": 949,
+        "id": 13,
+        "color": "Orange",
+        "sku": "DB013"
+    },
+    {
+        "image": "https://neal.fun/spend/images/jet-ski.jpg",
+        "title": "Jet Ski",
+        "price": 4999,
+        "id": 14,
+        "color": "Turquoise",
+        "sku": "JS014"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/61GwJAhftvS._SY355_.jpg",
+        "title": "4K TV",
+        "price": 5499,
+        "id": 15,
+        "color": "Teal",
+        "sku": "TV015"
+    },
+    {
+        "image": "https://neal.fun/spend/images/diamond-ring.jpg",
+        "title": "Diamond Ring",
+        "price": 6999,
+        "id": 16,
+        "color": "Cyan",
+        "sku": "DR016"
+    },
+    {
+        "image": "https://neal.fun/spend/images/rolex.jpg",
+        "title": "Rolex",
+        "price": 11999,
+        "id": 17,
+        "color": "Magenta",
+        "sku": "RX017"
+    },
+    {
+        "image": "https://images.boats.com/resize/1/12/5/8011205_20210830143539187_1_LARGE.jpg?t=1630359339000",
+        "title": "Speed Boat",
+        "price": 13000,
+        "id": 18,
+        "color": "Lime",
+        "sku": "SB018"
+    },
+    {
+        "image": "https://media.istockphoto.com/photos/food-truck-isolated-picture-id1018059320?k=20&m=1018059320&s=612x612&w=0&h=m2prpa1Fs5xdhf_YpUt9U57JCIQoVIkFyioFfWiuVgU=",
+        "title": "Food Truck",
+        "price": 66999,
+        "id": 19,
+        "color": "Indigo",
+        "sku": "FT019"
+    }
+]
