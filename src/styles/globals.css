@@ -74,3 +74,10 @@ body{
   cursor: pointer;
   margin-left: 5px;
 }
+.product_conta{
+  max-width: 1000px;
+}
+.product_conta img{
+  width: 200px !important;
+  height: 230px !important;
+}

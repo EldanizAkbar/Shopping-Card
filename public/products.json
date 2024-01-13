@@ -1,154 +1,155 @@
 [
     {
-        "image": "https://neal.fun/spend/images/big-mac.jpg",
-        "title": "Big Mac",
-        "price": 2,
-        "id": 1,
-        "color": "Red",
-        "sku": "BM001"
+      "title": "Big Mac",
+      "description": "A classic Big Mac sandwich, known for its delicious combination of two beef patties, special sauce, lettuce, cheese, pickles, and onions on a sesame seed bun.",
+      "price": 2,
+      "color": "Red",
+      "sku": "BM001",
+      "image": "https://neal.fun/spend/images/big-mac.jpg"
     },
     {
-        "image": "https://neal.fun/spend/images/flip-flops.jpg",
-        "title": "Flip Flops",
-        "price": 4,
-        "id": 2,
-        "color": "Blue",
-        "sku": "FF002"
+      "title": "Flip Flops",
+      "description": "Comfortable and stylish flip-flops, perfect for a casual day at the beach or a relaxed summer outing. Available in a vibrant blue color.",
+      "price": 4,
+      "color": "Blue",
+      "sku": "FF002",
+      "image": "https://neal.fun/spend/images/flip-flops.jpg"
     },
     {
-        "image": "https://neal.fun/spend/images/book.jpg",
-        "title": "Book",
-        "price": 15,
-        "id": 3,
-        "color": "Green",
-        "sku": "BK003"
+      "title": "Book",
+      "description": "Immerse yourself in the world of literature with this captivating book. Whether you're a fan of fiction or non-fiction, this book is sure to provide an enriching reading experience.",
+      "price": 15,
+      "color": "Green",
+      "sku": "BK003",
+      "image": "https://neal.fun/spend/images/book.jpg"
     },
     {
-        "image": "https://www.blockfort.com/wp-content/uploads/9214/6986/2743/MortalKombat.jpg",
-        "title": "Video Game",
-        "price": 49.99,
-        "id": 4,
-        "color": "Black",
-        "sku": "VG004"
+      "title": "Video Game",
+      "description": "Dive into the exciting realm of gaming with this video game. Experience thrilling adventures, challenges, and immersive graphics for an unparalleled gaming escapade.",
+      "price": 49.99,
+      "color": "Black",
+      "sku": "VG004",
+      "image": "https://www.blockfort.com/wp-content/uploads/9214/6986/2743/MortalKombat.jpg"
     },
     {
-        "image": "https://thumbs.dreamstime.com/b/charity-donation-concept-women-s-hand-giving-receiving-gesture-charity-donation-concept-women-s-hand-giving-186159687.jpg",
-        "title": "Charity",
-        "price": 100,
-        "id": 5,
-        "color": "Pink",
-        "sku": "CH005"
+      "title": "Charity",
+      "description": "Make a difference with this charitable donation. Your contribution helps support meaningful causes and brings positive change to the community.",
+      "price": 100,
+      "color": "Pink",
+      "sku": "CH005",
+      "image": "https://thumbs.dreamstime.com/b/charity-donation-concept-women-s-hand-giving-receiving-gesture-charity-donation-concept-women-s-hand-giving-186159687.jpg"
     },
     {
-        "image": "https://neal.fun/spend/images/airpods.jpg",
-        "title": "Airpods",
-        "price": 119.99,
-        "id": 6,
-        "color": "White",
-        "sku": "AP006"
+      "title": "Airpods",
+      "description": "Enjoy high-quality audio with these Airpods. Stylish and wireless, they provide a seamless listening experience on the go.",
+      "price": 119.99,
+      "color": "White",
+      "sku": "AP006",
+      "image": "https://neal.fun/spend/images/airpods.jpg"
     },
     {
-        "image": "https://sutore.com/wp-content/uploads/2021/03/1-177.jpg",
-        "title": "Air Jordans",
-        "price": 170,
-        "id": 7,
-        "color": "Gray",
-        "sku": "AJ007"
+      "title": "Air Jordans",
+      "description": "Step out in style with these Air Jordans. The perfect blend of comfort and fashion for any sneaker enthusiast.",
+      "price": 170,
+      "color": "Gray",
+      "sku": "AJ007",
+      "image": "https://sutore.com/wp-content/uploads/2021/03/1-177.jpg"
     },
     {
-        "image": "https://img.gkbcdn.com/s3/p/2018-12-10/xiaomi-acton-b1-double-rocker-skateboard-black-1571989891056.jpg",
-        "title": "Skateboard",
-        "price": 120,
-        "id": 8,
-        "color": "Yellow",
-        "sku": "SB008"
+      "title": "Skateboard",
+      "description": "Embrace the thrill of skateboarding with this versatile skateboard. Ideal for riders of all levels, it's a must-have for skate enthusiasts.",
+      "price": 120,
+      "color": "Yellow",
+      "sku": "SB008",
+      "image": "https://img.gkbcdn.com/s3/p/2018-12-10/xiaomi-acton-b1-double-rocker-skateboard-black-1571989891056.jpg"
     },
     {
-        "image": "https://neal.fun/spend/images/smartphone.jpg",
-        "title": "Smartphone",
-        "price": 339,
-        "id": 9,
-        "color": "Gold",
-        "sku": "SP009"
+      "title": "Smartphone",
+      "description": "Experience the latest technology with this feature-packed smartphone. Stay connected, capture memories, and enjoy a sleek design.",
+      "price": 339,
+      "color": "Gold",
+      "sku": "SP009",
+      "image": "https://neal.fun/spend/images/smartphone.jpg"
     },
     {
-        "image": "https://neal.fun/spend/images/gaming-console.jpg",
-        "title": "Gaming Console",
-        "price": 399,
-        "id": 10,
-        "color": "Silver",
-        "sku": "GC010"
+      "title": "Gaming Console",
+      "description": "Elevate your gaming experience with this advanced gaming console. Immerse yourself in stunning graphics and cutting-edge gameplay.",
+      "price": 399,
+      "color": "Silver",
+      "sku": "GC010",
+      "image": "https://neal.fun/spend/images/gaming-console.jpg"
     },
     {
-        "image": "https://neal.fun/spend/images/bike.jpg",
-        "title": "Bike",
-        "price": 549,
-        "id": 11,
-        "color": "Brown",
-        "sku": "BK011"
+      "title": "Bike",
+      "description": "Embark on new adventures with this sturdy and reliable bike. Perfect for leisure rides or commuting, it's a great companion for outdoor enthusiasts.",
+      "price": 549,
+      "color": "Brown",
+      "sku": "BK011",
+      "image": "https://neal.fun/spend/images/bike.jpg"
     },
     {
-        "image": "https://neal.fun/spend/images/drone.jpg",
-        "title": "Drone",
-        "price": 789,
-        "id": 12,
-        "color": "Purple",
-        "sku": "DR012"
+      "title": "Drone",
+      "description": "Explore the skies with this high-performance drone. Capture breathtaking aerial views and enjoy the excitement of piloting your own aircraft.",
+      "price": 789,
+      "color": "Purple",
+      "sku": "DR012",
+      "image": "https://neal.fun/spend/images/drone.jpg"
     },
     {
-        "image": "https://neal.fun/spend/images/designer-handbag.jpg",
-        "title": "Designer Bag",
-        "price": 949,
-        "id": 13,
-        "color": "Orange",
-        "sku": "DB013"
+      "title": "Designer Bag",
+      "description": "Elevate your style with this luxurious designer bag. Crafted with precision and elegance, it's a statement piece for any fashion-forward individual.",
+      "price": 949,
+      "color": "Orange",
+      "sku": "DB013",
+      "image": "https://neal.fun/spend/images/designer-handbag.jpg"
     },
     {
-        "image": "https://neal.fun/spend/images/jet-ski.jpg",
-        "title": "Jet Ski",
-        "price": 4999,
-        "id": 14,
-        "color": "Turquoise",
-        "sku": "JS014"
+      "title": "Jet Ski",
+      "description": "Experience the thrill of the open water with this powerful jet ski. Perfect for water sports enthusiasts seeking excitement on the waves.",
+      "price": 4999,
+      "color": "Turquoise",
+      "sku": "JS014",
+      "image": "https://neal.fun/spend/images/jet-ski.jpg"
     },
     {
-        "image": "https://m.media-amazon.com/images/I/61GwJAhftvS._SY355_.jpg",
-        "title": "4K TV",
-        "price": 5499,
-        "id": 15,
-        "color": "Teal",
-        "sku": "TV015"
+      "title": "4K TV",
+      "description": "Immerse yourself in stunning visuals with this high-quality 4K TV. Elevate your entertainment experience with crystal-clear picture and vibrant colors.",
+      "price": 5499,
+      "color": "Teal",
+      "sku": "TV015",
+      "image": "https://m.media-amazon.com/images/I/61GwJAhftvS._SY355_.jpg"
     },
     {
-        "image": "https://neal.fun/spend/images/diamond-ring.jpg",
-        "title": "Diamond Ring",
-        "price": 6999,
-        "id": 16,
-        "color": "Cyan",
-        "sku": "DR016"
+      "title": "Diamond Ring",
+      "description": "Celebrate special moments with this exquisite diamond ring. A timeless symbol of love and commitment, it adds a touch of elegance to any occasion.",
+      "price": 6999,
+      "color": "Cyan",
+      "sku": "DR016",
+      "image": "https://neal.fun/spend/images/diamond-ring.jpg"
     },
     {
-        "image": "https://neal.fun/spend/images/rolex.jpg",
-        "title": "Rolex",
-        "price": 11999,
-        "id": 17,
-        "color": "Magenta",
-        "sku": "RX017"
+      "title": "Rolex",
+      "description": "Indulge in luxury with this iconic Rolex watch. Renowned for its precision and craftsmanship, it's a timeless accessory for discerning individuals.",
+      "price": 11999,
+      "color": "Magenta",
+      "sku": "RX017",
+      "image": "https://neal.fun/spend/images/rolex.jpg"
     },
     {
-        "image": "https://images.boats.com/resize/1/12/5/8011205_20210830143539187_1_LARGE.jpg?t=1630359339000",
-        "title": "Speed Boat",
-        "price": 13000,
-        "id": 18,
-        "color": "Lime",
-        "sku": "SB018"
+      "title": "Speed Boat",
+      "description": "Cruise the waters in style with this high-speed boat. Perfect for adventure seekers and marine enthusiasts, it offers an exhilarating experience on the open sea.",
+      "price": 13000,
+      "color": "Lime",
+      "sku": "SB018",
+      "image": "https://images.boats.com/resize/1/12/5/8011205_20210830143539187_1_LARGE.jpg?t=1630359339000"
     },
     {
-        "image": "https://media.istockphoto.com/photos/food-truck-isolated-picture-id1018059320?k=20&m=1018059320&s=612x612&w=0&h=m2prpa1Fs5xdhf_YpUt9U57JCIQoVIkFyioFfWiuVgU=",
-        "title": "Food Truck",
-        "price": 66999,
-        "id": 19,
-        "color": "Indigo",
-        "sku": "FT019"
+      "title": "Food Truck",
+      "description": "Satisfy your culinary cravings with this versatile food truck. Ideal for entrepreneurs and food enthusiasts, it's a mobile kitchen ready to serve delicious treats.",
+      "price": 66999,
+      "color": "Indigo",
+      "sku": "FT019",
+      "image": "https://media.istockphoto.com/photos/food-truck-isolated-picture-id1018059320?k=20&m=1018059320&s=612x612&w=0&h=m2prpa1Fs5xdhf_YpUt9U57JCIQoVIkFyioFfWiuVgU="
     }
-]
+  ]
+  

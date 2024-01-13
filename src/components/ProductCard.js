@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import ConfirmationModal from './ConfirmationModal';
+import Link from 'next/link';
 
 const ProductCard = ({ product, onAddToCart, onToggleFavorite }) => {
   const [isAddedToCart, setIsAddedToCart] = useState(localStorage.getItem(`cart_${product.sku}`) === 'true');
@@ -55,6 +56,8 @@ const ProductCard = ({ product, onAddToCart, onToggleFavorite }) => {
         >
           {isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
         </button>
+        
+        <Link href={`/products/${product.sku}`} className='block bg-gray-500 hover:bg-gray-700 text-white font-bold py-2  rounded-full mt-4'>View More Detail</Link>
       </div>
       <ConfirmationModal
         isOpen={showModal}
