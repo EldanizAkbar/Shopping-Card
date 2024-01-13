@@ -76,7 +76,7 @@ export default function Product(props) {
 }
 
 export const getServerSideProps = async ({ query }) => {
-  const response = await fetch('http://localhost:3000/products.json');
+  const response = await fetch('https://online-store-tau-fawn.vercel.app/products.json');
   const data = await response.json();
 
   const product = data.find((product) => product.sku === query.id);
