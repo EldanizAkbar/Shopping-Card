@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Link from 'next/link';
+import ConfirmationModal from '@/components/ConfirmationModal';
 
 export default function Product(props) {
   const [cartCount, setCartCount] = useState(0);
   const [favoritesCount, setFavoritesCount] = useState(0);
   const [isAddedToCart, setIsAddedToCart] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
+  const [cartProducts, setCartProducts] = useState([]);
+  const [favoritesProducts, setFavoritesProducts] = useState([]);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     const storedCartCount = parseInt(localStorage.getItem('cartCount')) || 0;
@@ -20,22 +24,62 @@ export default function Product(props) {
 
     const storedIsFavorite = localStorage.getItem(`favorite_${props.sku}`);
     setIsFavorite(storedIsFavorite === 'true');
+
+    // Retrieve cart products from local storage
+    const storedCartProducts = JSON.parse(localStorage.getItem('cartProducts')) || [];
+    setCartProducts(storedCartProducts);
   }, [props.sku]);
 
   const handleAddToCart = () => {
-    if (!isAddedToCart) {
-      setCartCount((prevCount) => prevCount + 1);
-      localStorage.setItem('cartCount', cartCount + 1);
-      setIsAddedToCart(true);
-      localStorage.setItem(`cart_${props.sku}`, 'true');
-    }
+    setShowModal(true); // Open the confirmation modal
+  };
+
+  const confirmAddToCart = () => {
+    // If the user clicks "Yes" in the modal
+    setCartCount((prevCount) => prevCount + 1);
+    localStorage.setItem('cartCount', cartCount + 1);
+    setIsAddedToCart(true);
+    localStorage.setItem(`cart_${props.sku}`, 'true');
+
+    const productToAdd = props;
+
+    setCartProducts((prevProducts) => {
+      const updatedProducts = [...prevProducts, productToAdd];
+      localStorage.setItem('cartProducts', JSON.stringify(updatedProducts));
+      return updatedProducts;
+    });
+
+    setShowModal(false); // Close the modal
+  };
+
+  const cancelAddToCart = () => {
+    // If the user clicks "No" in the modal
+    setShowModal(false); // Close the modal
   };
 
   const handleToggleFavorite = () => {
-    setIsFavorite((prev) => !prev);
-    localStorage.setItem(`favorite_${props.sku}`, !isFavorite ? 'true' : 'false');
-    setFavoritesCount((prevCount) => (isFavorite ? prevCount - 1 : prevCount + 1));
-    localStorage.setItem('favoritesCount', isFavorite ? favoritesCount - 1 : favoritesCount + 1);
+    const newIsFavorite = !isFavorite;
+    setIsFavorite(newIsFavorite);
+    localStorage.setItem(`favorite_${props.sku}`, newIsFavorite ? 'true' : 'false');
+  
+    if (newIsFavorite) {
+      // Add to favorites
+      const productToAdd = { ...props };
+      setFavoritesProducts((prevProducts) => {
+        const updatedProducts = [...prevProducts, productToAdd];
+        localStorage.setItem('favoriteProducts', JSON.stringify(updatedProducts));
+        return updatedProducts;
+      });
+    } else {
+      // Remove from favorites
+      const updatedFavoriteProducts = favoritesProducts.filter((product) => product.sku !== props.sku);
+      localStorage.setItem('favoriteProducts', JSON.stringify(updatedFavoriteProducts));
+      setFavoritesProducts(updatedFavoriteProducts);
+    }
+  
+    // Update favorites count and local storage
+    setFavoritesCount((prevCount) => (newIsFavorite ? prevCount + 1 : prevCount - 1));
+    localStorage.setItem('favoritesCount', newIsFavorite ? favoritesCount + 1 : favoritesCount - 1);
   };
 
   return (
@@ -71,6 +115,14 @@ export default function Product(props) {
           <Link href="/" className='text-blue-500 hover:underline mt-4 block'>Back to Home</Link>
         </div>
       </div>
+      <ConfirmationModal
+        isOpen={showModal}
+        onClose={cancelAddToCart}
+        onConfirm={confirmAddToCart}
+        productName={props.title}
+        modalHeader='Add to Cart Confirmation'
+        modalQuestion={`Are you sure you want to add ${props.title} to your shopping cart?`}
+      />
     </>
   );
 }

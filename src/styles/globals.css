@@ -81,3 +81,8 @@ body{
   width: 200px !important;
   height: 230px !important;
 }
+
+.carts_container{
+  width: 100%;
+  max-width: 1300px;
+}

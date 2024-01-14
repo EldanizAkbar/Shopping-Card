@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const ConfirmationModal = ({ isOpen, onClose, onConfirm, productName }) => {
+const ConfirmationModal = ({ isOpen, onClose, onConfirm, productName, modalHeader, modalQuestion }) => {
   const overlayStyle = {
     display: isOpen ? 'block' : 'none',
   };
@@ -14,10 +14,13 @@ const ConfirmationModal = ({ isOpen, onClose, onConfirm, productName }) => {
   return (
     <div className="modal-overlay" style={overlayStyle} onClick={onClose}>
       <div className="modal mx-auto mt-20" style={modalStyle} onClick={(e) => e.stopPropagation()}>
-        <h2 className='text-left mb-5'><strong>Add to Cart Confirmation</strong></h2>
-        <p className='mb-5'>Are you sure you want to add <strong>{productName}</strong> to your shopping cart?</p>
+        <h2 className='text-left mb-5'><strong>{modalHeader}</strong></h2>
+        <p className='mb-5 text-center'>{modalQuestion}</p>
+        <div className='text-center'>
         <button className="confirm-btn" onClick={onConfirm}>Yes</button>
         <button className="cancel-btn" onClick={onClose}>No</button>
+        </div>
+        
       </div>
     </div>
   );

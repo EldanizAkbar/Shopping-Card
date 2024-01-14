@@ -16,7 +16,7 @@ const ProductCard = ({ product, onAddToCart, onToggleFavorite }) => {
     setIsAddedToCart(true);
     localStorage.setItem(`cart_${product.sku}`, 'true');
     setShowModal(false);
-    onAddToCart(); 
+    onAddToCart(product.sku); 
   };
 
   const cancelAddToCart = () => {
@@ -26,7 +26,7 @@ const ProductCard = ({ product, onAddToCart, onToggleFavorite }) => {
   const toggleFavorite = () => {
     setIsFavorite((prev) => !prev);
     localStorage.setItem(`favorite_${product.sku}`, !isFavorite ? 'true' : 'false');
-    onToggleFavorite(isFavorite); 
+    onToggleFavorite(isFavorite, product.sku); 
   };
 
   return (
@@ -64,6 +64,8 @@ const ProductCard = ({ product, onAddToCart, onToggleFavorite }) => {
         onClose={cancelAddToCart}
         onConfirm={confirmAddToCart}
         productName={product.title}
+        modalHeader='Add to Cart Confirmation'
+        modalQuestion={`Are you sure you want to add ${product.title}to your shopping cart?`}
       />
     </div>
   );
